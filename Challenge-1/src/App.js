@@ -12,18 +12,14 @@ export default function App() {
   );
 }
 
-function Avatar(props) {
-  return (
-    <div className="avatar">
-      <img src="./plamen-dev.png" alt="Plamen dev" />
-    </div>
-  );
+function Avatar() {
+  return <img className="avatar" src="./plamen-dev.png" alt="Plamen dev" />;
 }
 
-function Intro(props) {
+function Intro() {
   return (
     <div>
-      <h1>Jonas Schmedtmann</h1>
+      <h1>Plamen Kovandzhiev</h1>
       <p>
         Full-satck web developer and teacher at Udemy. When not coding or
         preparing a course, I like to play board games, to cook (and eat), or to
@@ -33,23 +29,24 @@ function Intro(props) {
   );
 }
 
-function SkillList(props) {
+function SkillList() {
   return (
-    <div className="skillList">
-      <Skill name="HTML+CSS" backgroundColor="Blue" symbol="💪" />
-      <Skill name="JavaScript" backgroundColor="Yellow" symbol="💪" />
-      <Skill name="Web Design" backgroundColor="LightGreen" symbol="💪" />
-      <Skill name="Git and GitHub" backgroundColor="Red" symbol="👍" />
-      <Skill name="React" backgroundColor="Cyan" symbol="💪" />
-      <Skill name="Svelte" backgroundColor="Red" symbol="👶" />
+    <div className="skill-list">
+      <Skill skill="HTML+CSS" color="Blue" emoji="💪" />
+      <Skill skill="JavaScript" color="Yellow" emoji="💪" />
+      <Skill skill="Web Design" color="LightGreen" emoji="💪" />
+      <Skill skill="Git and GitHub" color="Red" emoji="👍" />
+      <Skill skill="React" color="Cyan" emoji="💪" />
+      <Skill skill="Svelte" color="Red" emoji="👶" />
     </div>
   );
 }
 
 function Skill(props) {
   return (
-    <div className="skill" style={{ backgroundColor: props.backgroundColor }}>
-      {props.name} {props.symbol}
+    <div className="skill" style={{ backgroundColor: props.color }}>
+      <span>{props.skill}</span>
+      <span>{props.emoji}</span>
     </div>
   );
 }

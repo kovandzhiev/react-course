@@ -70,7 +70,7 @@ function Header() {
 function Menu() {
   return (
     <main className="menu">
-      <h2>Our manu</h2>
+      <h2>Our menu</h2>
       <Pizza
         name="Pizza Spinaci"
         ingredients="Tomato, mozarella, spinach, and ricotta cheese"
