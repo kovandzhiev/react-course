@@ -1,0 +1,14 @@
+>> Create new React app
+npx create-react-app my-app
+cd my-app
+npm start
+
+>> JS
+books.map((book) => book.title); // Създава масив със същия размер
+books.filter((book) => book.pages > 500) // Създава масив с намален размер
+booksAfterAdd.filter((book) => book.id !== 3); // Изтрива елемент от масива
+arr.slice() // Създава нова версия на масива
+arr.slice().sort((a, b) => b - a) // Спортира масива
+const booksAfterAdd = [...books, newBook]; // Добавя нов елемент в края на масива
+
+>> 
