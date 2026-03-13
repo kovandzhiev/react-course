@@ -80,7 +80,7 @@ function Menu() {
         <React.Fragment>
           <p>
             Authentic Italian cuisine. 6 creative dishes to choose from. All
-            from our stone over, all organic, all delicious.
+            from our stone oven, all organic, all delicious.
           </p>
           <ul className="pizzas">
             {pizzas.map((pizza) => (
@@ -99,7 +99,6 @@ function Pizza({ pizzaObj }) {
   console.log(pizzaObj);
 
   // if (pizzaObj.soldOut) return null;
-
   return (
     <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
       <img src={pizzaObj.photoName} alt={pizzaObj.name} />
@@ -109,7 +108,7 @@ function Pizza({ pizzaObj }) {
 
         {/* {pizzaObj.soldOut ? <span>Sold out</span> : <span>pizzaObj.price</span>} */}
 
-        <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price}</span>
+        <span>{pizzaObj.soldOut ? "SOLD OUT" : `€${pizzaObj.price.toFixed(2)}`}</span>
       </div>
     </li>
   );
