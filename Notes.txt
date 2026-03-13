@@ -3,6 +3,9 @@ npx create-react-app my-app
 cd my-app
 npm start
 
+> Restore node_modules
+npm install
+
 >> JS
 books.map((book) => book.title); // Създава масив със същия размер
 books.filter((book) => book.pages > 500) // Създава масив с намален размер
