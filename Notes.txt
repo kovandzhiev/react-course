@@ -1,5 +1,5 @@
 >> Create new React app
-npx create-react-app my-app
+npx create-react-app@5 my-app
 cd my-app
 npm start
 
@@ -9,6 +9,9 @@ npm install
 > Add React tool
 https://react.dev/learn/react-developer-tools Install for Chrome/Firefox
 Include Components/Profiler
+
+> Create new React app in https://codesandbox.io/
+http://react.new/
 
 >> JS
 books.map((book) => book.title); // Създава масив със същия размер
