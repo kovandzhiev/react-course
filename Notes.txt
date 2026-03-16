@@ -21,4 +21,16 @@ arr.slice() // Създава нова версия на масива
 arr.slice().sort((a, b) => b - a) // Спортира масива
 const booksAfterAdd = [...books, newBook]; // Добавя нов елемент в края на масива
 
->> 
+>> Setup
+NodeJs
+Crome Browser
+VS Code
+ - eslint
+ - prettier
+ - one monokai
+ - material icon theme
+ - Settings (User) -> auto save -> "onFocusChange"
+                      default formater -> "Prettier - Code formater"
+					  format on save -> Mark
+					  eslint run -> onSave
+ - Snippets -> New global snippet -> type name "plamen.code-snippet" -> paste data from -> \ultimate-react-course\00-setup\snippets.json
