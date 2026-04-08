@@ -1,3 +1,5 @@
+>> Emoji in VS Code
+Win + ;
 >> Create new React app
 npx create-react-app@5 my-app
 cd my-app
